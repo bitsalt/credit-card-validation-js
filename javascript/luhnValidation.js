@@ -2,8 +2,8 @@ const validateCreditCard = (cardNum) => {
     // check against the card type
 
     // the Luhn algorithm goes from right to left, so reverse the digits...
-    const num = cardNum.toString();
-    const numArr = num.split('').map(x => parseInt(x));
+    const cardStr = cardNum.toString();
+    const numArr = cardStr.split('').map(x => parseInt(x));
     let rightToLeftArr = numArr.reverse();
 
     // ...and apply the algorithm
