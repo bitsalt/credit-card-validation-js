@@ -1,2 +1,2 @@
-javascript/node_modules
-python/.idea
+node_modules
+.jshintrc
